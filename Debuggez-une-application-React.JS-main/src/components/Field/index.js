@@ -13,10 +13,11 @@ const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
     case FIELD_TYPES.INPUT_TEXT:
       component = (
         <input
-          type="text"
+          type="text" 
           name={name}
           placeholder={placeholder}
           data-testid="field-testid"
+          required
         />
       );
       break;
@@ -30,6 +31,7 @@ const Field = ({ type = FIELD_TYPES.INPUT_TEXT, label, name, placeholder }) => {
           name={name}
           placeholder={placeholder}
           data-testid="field-testid"
+         required
         />
       );
   }

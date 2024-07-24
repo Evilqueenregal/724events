@@ -43,6 +43,7 @@ const Select = ({
                     defaultChecked={value === s}
                     name="selected"
                     type="radio"
+                    
                   />{" "}
                   {s}
                 </li>
